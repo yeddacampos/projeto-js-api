@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-size: 16.5;
+    height: 100%;
+    font-family: "Fredoka", sans-serif;
+}
+
+.video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 1;
+}
+
+.caixa {
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 1000px;
+
+    padding: 0 2rem;
+}
+
+.procura {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* position: absolute;
+    top: 50%; */
+
+}
+
+.procura button {
+    margin: 0rem .5rem 0rem;
+    padding: 0;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-radius: 50%;
+
+    transform: translate(53px, 0px);
+    cursor: pointer;
+}
+
+.icone-lupa {
+    width: 36.5px;
+    height: 36.5px;
+}
+
+.procura input {
+    height: 50px;
+    width: 300px;
+    padding: 0.5rem 0.5rem 0.5rem 3.1rem;
+
+    border: none;
+    border-radius: 100px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+}
+
+.envelope {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.conteudo-musica {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.playlist-caixa {
+    list-style-type: none;
+    padding-left: 0;
+
+    width: 100%;
+}
+
+.playlist-caixa li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0.0rem 0.75rem;
+}
+
+.playlist-caixa li p {
+    width: 210px;
+    font-size: 1rem;
+    text-align: left;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.capaAlbum {
+    width: 40px;
+    height: 8%;
+
+}
+
+.icone-musica {
+    width: 6.5rem;
+    height: 6.5rem;
+
+    margin-top: 2rem;
+}
+
+.conteudo-musica h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+
+}
+
+.conteudo-musica::after {
+    margin-left: 36%;
+    content: "";
+    position: absolute;
+    top: 8rem;
+    left: 0rem;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    height: 406px;
+    width: 350px;
+    border-radius: 20px;
+    z-index: -1;
+}
