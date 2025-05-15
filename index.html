@@ -17,7 +17,7 @@
             <source id="video-source" src="/assets/videos/lo-fi.mp4" type="video/mp4">
         </video <div class="caixa">
         <div class="procura">
-            <button onclick="movimentoInput()">
+            <button onclick="movimentoInput(); botaoDeBusca();">
                 <img class="icone-lupa" src="/assets/imagens/lupa.png" alt="lupa">
             </button>
             <input id="input-busca" placeholder="Digite o nome do artista" type="text">
@@ -26,19 +26,8 @@
             <div class="conteudo-musica">
                 <img class="icone-musica" src="/assets/imagens/spotify.png" alt="spotify-icon">
                 <h2>Top 3 álbuns</h2>
-                <ul class="playlist-caixa">
-                    <li>
-                        <img class="capaAlbum" src="/assets/imagens/bleach-nirvana.jpg" alt="album-icon">
-                        <p>nome da musica</p>
-                    </li>
-                    <li>
-                        <img class="capaAlbum" src="/assets/imagens/bleach-nirvana.jpg" alt="album-icon">
-                        <p>nome da musica</p>
-                    </li>
-                    <li>
-                        <img class="capaAlbum" src="/assets/imagens/bleach-nirvana.jpg" alt="album-icon">
-                        <p>nome da musica</p>
-                    </li>
+                <ul id="lista-albuns" class="playlist-caixa">
+                    <!-- Os álbuns serão inseridos aqui via JavaScript -->
                 </ul>
             </div>
         </div>
