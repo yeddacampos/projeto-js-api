@@ -113,10 +113,10 @@ html {
     counter-reset: item;
     padding-left: 0;
     width: 100%;
+    margin-top: 20px;
 }
 
 .playlist-caixa li {
-    display: flex;
     align-items: center;
     gap: 1rem;
     margin-bottom: 1rem;
@@ -126,7 +126,6 @@ html {
 .playlist-caixa li p {
     margin: 0;
     font-size: 1rem;
-    text-align: left;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -153,10 +152,12 @@ html {
     width: 6.5rem;
     height: 6.5rem;
 
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .conteudo-musica {
+    width: 400px;
+    margin-top: 50px;
     padding: 2rem;
     display: flex;
     flex-direction: column;
